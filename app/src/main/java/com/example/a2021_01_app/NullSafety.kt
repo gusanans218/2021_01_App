@@ -23,7 +23,7 @@ class NullSafety : AppCompatActivity() {
         val number : Int = 10
         val number1 : Int? = null
 
-        //!!-> 개발자가 null이 아님을 보장장
+        //!!-> 개발자가 null이 아님을 보장
        val number5:Int = number1!! + 10
 
 //        val number3 = number1?.plus(number)
