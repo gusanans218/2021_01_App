@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.2021_01_App">
+        <activity android:name=".RealmActivity"></activity>
         <activity android:name=".SharePreferenceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TabPager2Activity"/>
+        <activity android:name=".TabPager2Activity" />
         <activity android:name=".TabPagerActivity" />
         <activity android:name=".PhoneBookWithRecyclerViewActivity" />
         <activity android:name=".RecyclerViewActivity" />
