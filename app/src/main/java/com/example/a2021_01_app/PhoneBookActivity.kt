@@ -50,9 +50,7 @@ class PhoneBookActivity : AppCompatActivity() {
     }
 
 }
-
-
-    class PhoneBook() {
+class PhoneBook() {
         // 전화 번호부
         val personList = ArrayList<Person>()
 
