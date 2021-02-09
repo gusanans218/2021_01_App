@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.a2021_01_app">
 
-    <permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,14 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.2021_01_App">
-        <activity android:name=".AsyncActivity">
+        <activity android:name=".NetworkActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RealmActivity"/>
+        <activity android:name=".AsyncActivity"/>
+        <activity android:name=".RealmActivity" />
         <activity android:name=".SharePreferenceActivity" />
         <activity android:name=".TabPager2Activity" />
         <activity android:name=".TabPagerActivity" />
@@ -26,7 +27,7 @@
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".PhoneBookDetailActivity" />
-        <activity android:name=".PhoneBookActivity"/>
+        <activity android:name=".PhoneBookActivity" />
         <activity android:name=".AddViewActivity" /> <!-- <activity android:name=".LibraryActivity"/> -->
         <activity android:name=".Thread" />
         <activity android:name=".Context" />

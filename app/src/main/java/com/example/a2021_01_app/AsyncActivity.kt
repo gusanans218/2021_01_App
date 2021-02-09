@@ -1,12 +1,16 @@
 package com.example.a2021_01_app
 
+
 import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
+import android.os.SystemClock.sleep
 import android.util.Log
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.a2021_01_app.Intent2
+import com.example.a2021_01_app.R
 import kotlinx.android.synthetic.main.activity_async.*
 import java.lang.Thread.sleep
 
@@ -41,8 +45,8 @@ class AsyncActivity : AppCompatActivity() {
 
 
 class BackgroundAsyncTask(
-    val progressbar: ProgressBar,
-    val progressText: TextView
+        val progressbar: ProgressBar,
+        val progressText: TextView
 ) : AsyncTask<Int, Int, Int>() {
     // params -> doInBackgournd 에서 사용할 타입
     // progess -> onProgressUpdate 에서 사용할 타입
@@ -64,7 +68,7 @@ class BackgroundAsyncTask(
                 publishProgress(percent)
             }
             try {
-                Thread.sleep(100)
+//                Thread.sleep(100)
             } catch (e: Exception) {
                 e.printStackTrace()
             }
@@ -86,3 +90,4 @@ class BackgroundAsyncTask(
         progressbar.setProgress(0)
         progressText.setText("작업이 취소되었습니다.")
     }
+}
