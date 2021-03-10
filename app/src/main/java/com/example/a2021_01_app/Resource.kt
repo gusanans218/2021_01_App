@@ -33,4 +33,5 @@ class Resource : AppCompatActivity() {
         }
 
     }
+    
 }
